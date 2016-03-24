@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SoapUI2</groupId>
+  <artifactId>SoapUI2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <pluginRepositories>
+  	<pluginRepository>
+ 		<id>eviwarePluginRepository</id>
+ 		<url>http://www.eviware.com/repository/maven2/</url> 	
+  	</pluginRepository>
+  </pluginRepositories>
+  
+  <build>
+  <plugins>
+  	<plugin>
+  		<groupId>eviware</groupId>
+  		<artifactId>maven-soapui-plugin</artifactId>
+  		<version>4.5.1</version>
+  			<executions>
+  				<execution>
+  					<id>Getdocstatus</id>
+  					<goals>
+  						<goal>test</goal>
+  					</goals>
+  					<phase>test</phase>
+  				</execution>
+  			</executions>
+  			<configuration>
+  				<projectFile>${basedir}/src/test/soapui/Getdocstatus-4-soapui-project.xml</projectFile>
+  				<outputFolder>${basedir}/src/test/soapui/surefire-reports</outputFolder>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+
+
+</project>

@@ -1,0 +1,57 @@
+Status: FAILED
+Time Taken: 1827
+Size: 410
+Timestamp: Thu Jul 09 09:42:24 BST 2015
+TestStep: EDT_GetDocStatus - Request 1
+
+----------------- Messages ------------------------------
+[XPath Match] XPathContains comparison failed, expecting [4005], actual was [4003]
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://hub08to2/EDTWebService/EDTWebService.asmx
+
+---------------- Request ---------------------------
+Request Headers: Host : hub08to2
+Content-Length : 443
+SOAPAction : "EDTwebns/EDT_GetDocStatus"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:edt="EDTwebns">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <edt:EDT_GetDocStatus>
+         <!--Optional:-->
+         <edt:rsKey>PI25251</edt:rsKey>
+         <edt:rlDocId>574</edt:rlDocId>
+         <edt:reStatus>4002</edt:reStatus>
+         <!--Optional:-->
+         <edt:rsErr>?</edt:rsErr>
+      </edt:EDT_GetDocStatus>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-AspNet-Version : 2.0.50727
+Date : Thu, 09 Jul 2015 08:42:26 GMT
+#status# : HTTP/1.1 200 OK
+Content-Length : 410
+Content-Type : text/xml; charset=utf-8
+X-Powered-By : ASP.NET
+Server : Microsoft-IIS/7.5
+Cache-Control : private, max-age=0
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <EDT_GetDocStatusResponse xmlns="EDTwebns">
+         <EDT_GetDocStatusResult>true</EDT_GetDocStatusResult>
+         <reStatus>4003</reStatus>
+         <rsErr>?</rsErr>
+      </EDT_GetDocStatusResponse>
+   </soap:Body>
+</soap:Envelope>

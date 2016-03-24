@@ -1,0 +1,407 @@
+2015-11-24 14:08:19,300 WARN  [SoapUI] Missing folder [C:\Users\TonyYip\workspace\SoapUI2\.\ext] for external libraries
+2015-11-24 14:08:19,472 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\TonyYip\soapui-settings.xml]
+2015-11-24 14:08:20,268 INFO  [WsdlProject] Loaded project from [file:/C:/Users/TonyYip/workspace/SoapUI2/src/test/soapui/Getdocstatus-4-soapui-project.xml]
+2015-11-24 14:08:20,939 INFO  [SoapUITestCaseRunner] Running soapUI tests in project [GetDocStatus_4]
+2015-11-24 14:08:20,939 INFO  [SoapUITestCaseRunner] Running Project [GetDocStatus_4], runType = SEQUENTIAL
+2015-11-24 14:08:20,971 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetDocStatus - Request 1]
+2015-11-24 14:08:20,987 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatus - Request 1]
+2015-11-24 14:08:23,701 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,701 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,717 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,717 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,717 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,717 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,717 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,717 ERROR [SoapUITestCaseRunner] EDT_GetDocStatus - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetDocStatus-EDT_GetDocStatus__Request_1-EDT_GetDocStatus__Request_1-0-FAILED.txt]
+2015-11-24 14:08:23,749 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetDocStatus - Request 1], time taken: 2728ms, status: FAILED
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetDocStatus - Fail 1]
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatus - Fail 1]
+2015-11-24 14:08:23,765 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,765 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,765 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 2] has status UNKNOWN
+2015-11-24 14:08:23,765 ERROR [SoapUITestCaseRunner] EDT_GetDocStatus - Fail 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetDocStatus-EDT_GetDocStatus__Fail_1-EDT_GetDocStatus__Fail_1-0-FAILED.txt]
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetDocStatus - Fail 1], time taken: 2ms, status: FAILED
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetDocStatus -Fail 2]
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatus - Fail 2]
+2015-11-24 14:08:23,765 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,765 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,765 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,765 INFO  [SoapUITestCaseRunner] Assertion [SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,765 ERROR [SoapUITestCaseRunner] EDT_GetDocStatus - Fail 2 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetDocStatus-EDT_GetDocStatus_Fail_2-EDT_GetDocStatus__Fail_2-0-FAILED.txt]
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetDocStatus -Fail 2], time taken: 2ms, status: FAILED
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_AddDocumentXML - Request 1]
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] running step [EDT_AddDocumentXML - Request 1]
+2015-11-24 14:08:23,780 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,780 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,780 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,780 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 2] has status UNKNOWN
+2015-11-24 14:08:23,780 ERROR [SoapUITestCaseRunner] EDT_AddDocumentXML - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\AddDocumentXML-EDT_AddDocumentXML__Request_1-EDT_AddDocumentXML__Request_1-0-FAILED.txt]
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_AddDocumentXML - Request 1], time taken: 2ms, status: FAILED
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_SetDocStatus - Request 1]
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] running step [EDT_SetDocStatus - Request 1]
+2015-11-24 14:08:23,843 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,843 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,843 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,843 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,843 ERROR [SoapUITestCaseRunner] EDT_SetDocStatus - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\SetDocStatus-EDT_SetDocStatus__Request_1-EDT_SetDocStatus__Request_1-0-FAILED.txt]
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_SetDocStatus - Request 1], time taken: 3ms, status: FAILED
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_SetDocStatus - Fail 1]
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] running step [EDT_SetDocStatus - Fail 1]
+2015-11-24 14:08:23,858 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,858 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,858 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,858 ERROR [SoapUITestCaseRunner] EDT_SetDocStatus - Fail 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\SetDocStatus-EDT_SetDocStatus__Fail_1-EDT_SetDocStatus__Fail_1-0-FAILED.txt]
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_SetDocStatus - Fail 1], time taken: 3ms, status: FAILED
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetDocStatusExt - Request 1]
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatusExt - Request 1]
+2015-11-24 14:08:23,858 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,858 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,858 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,858 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 2] has status UNKNOWN
+2015-11-24 14:08:23,874 ERROR [SoapUITestCaseRunner] EDT_GetDocStatusExt - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetDocStatusExt-EDT_GetDocStatusExt__Request_1-EDT_GetDocStatusExt__Request_1-0-FAILED.txt]
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetDocStatusExt - Request 1], time taken: 2ms, status: FAILED
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetDocStatusExt - Fail 1]
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] running step [EDT_GetDocStatusExt - Fail 1]
+2015-11-24 14:08:23,874 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,874 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,874 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 2] has status UNKNOWN
+2015-11-24 14:08:23,874 ERROR [SoapUITestCaseRunner] EDT_GetDocStatusExt - Fail 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetDocStatusExt-EDT_GetDocStatusExt__Fail_1-EDT_GetDocStatusExt__Fail_1-0-FAILED.txt]
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetDocStatusExt - Fail 1], time taken: 2ms, status: FAILED
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetPRacticeList - Request 1]
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] running step [EDT_GetPracticeList - Request 1]
+2015-11-24 14:08:23,874 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,874 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,874 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,874 INFO  [SoapUITestCaseRunner] Assertion [XPath Match 1] has status UNKNOWN
+2015-11-24 14:08:23,874 ERROR [SoapUITestCaseRunner] EDT_GetPracticeList - Request 1 failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetPracticeList-EDT_GetPRacticeList__Request_1-EDT_GetPracticeList__Request_1-0-FAILED.txt]
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetPRacticeList - Request 1], time taken: 1ms, status: FAILED
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Running soapUI testcase [EDT_GetPracticeList - Request 2 All]
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] running step [EDT_GetPracticeList - Request 2 All]
+2015-11-24 14:08:23,889 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: hub08to2
+2015-11-24 14:08:23,889 ERROR [SoapUI] An error occured [hub08to2], see error log for details
+2015-11-24 14:08:23,889 ERROR [errorlog] java.net.UnknownHostException: hub08to2
+java.net.UnknownHostException: hub08to2
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1252)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1164)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1098)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:242)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:149)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:561)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:238)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:147)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:42)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status UNKNOWN
+2015-11-24 14:08:23,889 ERROR [SoapUITestCaseRunner] EDT_GetPracticeList - Request 2 All failed, exporting to [C:\Users\TonyYip\workspace\SoapUI2/src/test/soapui/surefire-reports\GetPracticeList-EDT_GetPracticeList__Request_2_All-EDT_GetPracticeList__Request_2_All-0-FAILED.txt]
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [EDT_GetPracticeList - Request 2 All], time taken: 1ms, status: FAILED
+2015-11-24 14:08:23,889 INFO  [SoapUITestCaseRunner] Project [GetDocStatus_4] finished with status [FAILED] in 2950ms

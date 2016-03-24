@@ -1,0 +1,77 @@
+Status: FAILED
+Time Taken: 5003
+Size: 512
+Timestamp: Wed Jul 08 15:44:29 BST 2015
+TestStep: EDT_GetDocStatus - Request 1 1
+
+----------------- Messages ------------------------------
+[Not SOAP Fault] Response is a SOAP Fault
+[XPath Match] XPathContains assertion failed for path [declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] : Exception:Missing content for xpath [declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='EDTwebns';
+/soap:Envelope/soap:Body/ns1:EDT_GetDocStatusResponse/ns1:reStatus] in Response
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://hub08to2/EDTWebService/EDTWebService.asmx
+
+---------------- Request ---------------------------
+Request Headers: Host : hub08to2
+Content-Length : 447
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : application/soap+xml;charset=UTF-8;action="EDTwebns/EDT_GetDocStatus"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:edt="EDTwebns">
+   \r
+   <soap:Header/>
+   \r
+   <soap:Body>
+      \r
+      <edt:EDT_GetDocStatus>
+         \r
+         <!--Optional:-->
+         \r
+         <edt:rsKey>PI25251</edt:rsKey>
+         \r
+         <edt:rlDocId>574</edt:rlDocId>
+         \r
+         <edt:reStatus>4002</edt:reStatus>
+         \r
+         <!--Optional:-->
+         \r
+         <edt:rsErr>?</edt:rsErr>
+         \r
+      </edt:EDT_GetDocStatus>
+      \r
+   </soap:Body>
+   \r
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-AspNet-Version : 2.0.50727
+Date : Wed, 08 Jul 2015 14:44:33 GMT
+#status# : HTTP/1.1 500 Internal Server Error
+Content-Length : 512
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+Server : Microsoft-IIS/7.5
+Cache-Control : private
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <soap:Fault>
+         <soap:Code>
+            <soap:Value>soap:Sender</soap:Value>
+         </soap:Code>
+         <soap:Reason>
+            <soap:Text xml:lang="en">Server was unable to read request. ---> Request format is invalid: Missing required soap:Body element.</soap:Text>
+         </soap:Reason>
+         <soap:Detail/>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>

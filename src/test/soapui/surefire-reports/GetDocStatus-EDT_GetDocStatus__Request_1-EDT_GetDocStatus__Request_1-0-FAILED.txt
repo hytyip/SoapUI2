@@ -1,0 +1,30 @@
+Status: FAILED
+Time Taken: 2728
+Size: 0
+Timestamp: Tue Nov 24 14:08:20 GMT 2015
+TestStep: EDT_GetDocStatus - Request 1
+
+----------------- Messages ------------------------------
+java.net.UnknownHostException: hub08to2
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://hub08to2/EDTWebService/EDTWebService.asmx
+
+---------------- Request ---------------------------
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:edt="EDTwebns">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <edt:EDT_GetDocStatus>
+         <!--Optional:-->
+         <edt:rsKey>PI25251</edt:rsKey>
+         <edt:rlDocId>574</edt:rlDocId>
+         <edt:reStatus>4002</edt:reStatus>
+         <!--Optional:-->
+         <edt:rsErr>?</edt:rsErr>
+      </edt:EDT_GetDocStatus>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

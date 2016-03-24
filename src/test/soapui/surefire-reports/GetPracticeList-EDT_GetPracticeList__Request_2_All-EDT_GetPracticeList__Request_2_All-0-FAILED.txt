@@ -1,0 +1,28 @@
+Status: FAILED
+Time Taken: 1
+Size: 0
+Timestamp: Tue Nov 24 14:08:23 GMT 2015
+TestStep: EDT_GetPracticeList - Request 2 All
+
+----------------- Messages ------------------------------
+java.net.UnknownHostException: hub08to2
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://hub08to2/EDTWebService/EDTWebService.asmx
+
+---------------- Request ---------------------------
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:edt="EDTwebns">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <edt:EDT_GetPracticeList>
+         <!--Optional:-->
+         <edt:rsKey>PI25251</edt:rsKey>
+         <!--Optional:-->
+         <edt:rsNacs>*</edt:rsNacs>
+      </edt:EDT_GetPracticeList>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -
